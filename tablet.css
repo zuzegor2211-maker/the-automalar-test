@@ -1,0 +1,114 @@
+/* Стили для планшетов и десктопов */
+@media (min-width: 768px) {
+    /* Прячем гамбургер-меню на больших экранах */
+    .mobile-menu-btn {
+        display: none;
+    }
+    
+    /* Показываем обычное горизонтальное меню */
+    .nav-cap {
+        position: static;
+        display: block !important;
+        opacity: 1 !important;
+        background: transparent;
+        width: auto;
+        height: auto;
+        overflow: visible;
+    }
+    
+    .nav-list {
+        flex-direction: row;
+        justify-content: flex-end;
+        gap: 15px;
+        height: auto;
+        min-height: auto;
+        padding: 0;
+    }
+    
+    .nav-list li {
+        width: auto;
+    }
+    
+    .nav-list a {
+        font-size: 14px;
+        padding: 8px 12px;
+        border-bottom: none;
+    }
+    
+    .nav-list a:hover {
+        color: #007bff;
+        border-bottom: 2px solid #007bff;
+    }
+    
+    /* Кнопка КАТАЛОГ на десктопе */
+    .catalog-btn {
+        padding: 8px 15px !important;
+        font-size: 14px;
+        width: auto;
+        margin-top: 0;
+    }
+    
+    /* Окно каталога на десктопе */
+    .catalog-item {
+        position: relative;
+    }
+    
+    .catalog-window {
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-10px);
+        width: 90vw;
+        max-width: 1200px;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease;
+        background: rgba(0, 0, 0, 0.9);
+    }
+    
+    .catalog-window.active {
+        opacity: 1;
+        visibility: visible;
+        transform: translateX(-50%) translateY(0);
+    }
+    
+    .catalog-content {
+        margin: 10px auto;
+    }
+    
+    .catalog-grid {
+        grid-template-columns: repeat(3, 1fr);
+        max-height: 50vh;
+    }
+    
+    .close-btn {
+        display: none;
+    }
+}
+
+@media (min-width: 1024px) {
+    .nav-list {
+        gap: 25px;
+    }
+    
+    .nav-list a {
+        font-size: 15px;
+    }
+    
+    .catalog-btn {
+        padding: 10px 20px !important;
+        font-size: 15px;
+    }
+    
+    .catalog-grid {
+        grid-template-columns: repeat(6, 1fr);
+    }
+    
+    .catalog-column h4 {
+        font-size: 15px;
+    }
+    
+    .catalog-column a {
+        font-size: 13px;
+    }
+}

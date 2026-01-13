@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Магазин покраски машин</title>
+    <!-- Подключаем шрифт Manrope -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Базовые стили для мобильных (mobile-first) -->
+    <link rel="stylesheet" href="css/mobile.css" media="(max-width: 768px)">
+    <!-- Дополнительные стили для планшетов и выше -->
+    <link rel="stylesheet" href="css/tablet.css" media="(min-width: 768px)">
+    <!-- Дополнительные стили только для десктопов -->
+    <link rel="stylesheet" href="css/desktop.css" media="(min-width: 1024px)">
+    <!-- FontAwesome для иконок -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!--Шапка сайта-->
+    <header class="header">
+        <div class="logo">АвтоКраска</div>
+        <!-- Гамбургер-меню (три полоски) -->
+        <button class="mobile-menu-btn" id="mobileMenuBtn">
+            <span class="menu-line"></span>
+            <span class="menu-line"></span>
+            <span class="menu-line"></span>
+        </button>
+        
+        <!-- Навигационное меню -->
+        <nav class="nav-cap" id="mainNav">
+            <ul class="nav-list">
+                <li><a href="404.html">О КОМПАНИИ</a></li>
+                <li><a href="404.html">КОНТАКТЫ</a></li>
+                <li><a href="404.html">КРЕДИТ</a></li>
+                
+                <!-- УСЛУГИ -->
+                <li class="services-item">
+                    <button class="services-btn" id="servicesBtn">
+                        УСЛУГИ <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <!-- Выпадающий список услуг -->
+                    <div class="services-dropdown" id="servicesDropdown">
+                        <div class="services-grid">
+                            <!-- Колонка 1 -->
+                            <div class="services-column">
+                                <h4>Кузовные работы</h4>
+                                <a href="404.html">Полная покраска авто</a>
+                                <a href="404.html">Локальная покраска</a>
+                                <a href="404.html">Ремонт вмятин</a>
+                                <a href="404.html">Антикоррозийная обработка</a>
+                                <a href="404.html">Восстановление ЛКП</a>
+                                <a href="/404.html">Рихтовка кузова</a>
+                            </div>
+                            
+                            <!-- Колонка 2 -->
+                            <div class="services-column">
+                                <h4>Защитные покрытия</h4>
+                                <a href="404.html">Керамическое покрытие</a>
+                                <a href="404.html">Жидкое стекло</a>
+                                <a href="404.html">Антигравийная пленка</a>
+                                <a href="404.html">Антидождевое покрытие</a>
+                                <a href="404.html">Восковое покрытие</a>
+                                <a href="404.html">Защита фар</a>
+                            </div>
+                            
+                            <!-- Колонка 3 -->
+                            <div class="services-column">
+                                <h4>Полировка и чистка</h4>
+                                <a href="404.html">Полировка кузова</a>
+                                <a href="404.html">Глубокая полировка</a>
+                                <a href="404.html">Химчистка салона</a>
+                                <a href="404.html">Мойка двигателя</a>
+                                <a href="404.html">Чистка дисков</a>
+                                <a href="404.html">Озонирование</a>
+                            </div>
+                            
+                            <!-- Колонка 4 -->
+                            <div class="services-column">
+                                <h4>Спецуслуги</h4>
+                                <a href="404.html">Аэрография</a>
+                                <a href="404.html">Тонирование стекол</a>
+                                <a href="404.html">Покраска дисков</a>
+                                <a href="404.html">Перетяжка салона</a>
+                                <a href="404.html">Шумоизоляция</a>
+                                <a href="404.html">Обновление фар</a>
+                            </div>
+                            
+                            <!-- Колонка 5 -->
+                            <div class="services-column">
+                                <h4>Типы покраски</h4>
+                                <a href="404.html">Металлик</a>
+                                <a href="404.html">Хамелеон</a>
+                                <a href="404.html">Матовые покрытия</a>
+                                <a href="404.html">Глянцевые эмали</a>
+                                <a href="404.html">Перламутр</a>
+                                <a href="404.html">Специальные краски</a>
+                            </div>
+                        </div>
+                        
+                        <div class="services-footer">
+                            <div class="special-offer">
+                                <i class="fas fa-gift"></i>
+                                <span>При заказе от 50 000₽ - скидка 15%</span>
+                            </div>
+                            <a href="/" class="all-services">Все услуги →</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!--Основная часть сайта-->
+    <main>
+        <section>
+            <div class="cap-section-"> <!-- -1 -->
+            </div>
+        </section>
+    </main>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
